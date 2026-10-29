@@ -10,8 +10,9 @@
     .frame1{
         background-color: black;
         display: flex;
-        width: 586px;
-        height: 261px;
+        flex-direction: row;
+        width: fit-content;
+        height: fit-content;
         border-radius: 20px;
         margin: auto;
         margin-top: 50px;
@@ -20,9 +21,8 @@
     .frame2{
         width: 293px;
         height: 261px;
-        display: flex;
         overflow: hidden; /* Para que el contenido no sobresalga del div*/
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 20px 20px 20px 20px;
     }
 
     .frame2 img{
@@ -39,7 +39,8 @@
         display: flex;
         padding: 20px 40px 20px 20px;
         gap: 20px;
-        flex-direction: column; 
+        flex-direction: column;
+        box-sizing: border-box; /*Para que el padding no se sume*/
     }
 
     .frame4{
@@ -117,9 +118,9 @@
     }
 
 
-    @media (max-witdh: 600px){
+    @media (max-width: 600px){
 
-        section{
+        .frame1{
             flex-direction: column;
         }
         
