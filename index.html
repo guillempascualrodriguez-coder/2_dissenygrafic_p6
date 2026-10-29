@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card CSS - Kill Bill</title>
+</head>
+<style>
+    
+    .frame1{
+        background-color: black;
+        display: flex;
+        width: 586px;
+        height: 261px;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .frame2{
+        width: 293px;
+        height: 261px;
+        display: flex;
+        overflow: hidden; /* Para que el contenido no sobresalga del div*/
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .frame2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /*Para que llene todo el contenido*/
+        object-position: center; 
+    }
+
+
+    .frame3{
+        width: 293px;
+        height: 261px;
+        display: flex;
+        padding: 20px 40px 20px 20px;
+        gap: 20px;
+        flex-direction: column; 
+    }
+
+    .frame4{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+
+    .frame5{
+        display: flex;
+        gap: 20px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+
+
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .estrella { 
+        width: 20px;
+        height: 20px;
+        background: white; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    }
+
+
+    .frame6{
+        display: flex;
+        gap: 5px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .amarillo{
+        color: #FCD612;
+    }
+
+    button{
+        background-color: black;
+        border-color:#FCD612;
+        color:#FCD612;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 200px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+    .play{
+        width: 10px;
+        height: 12px;
+        background-color: #FCD612;
+        clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
+
+
+    @media (max-witdh: 600px){
+
+        section{
+            flex-direction: column;
+        }
+        
+    }
+
+</style>
+
+
+
+<body>
+    <section class="frame1">
+        <div class="frame2"> 
+            <img src="img/1.jpg" alt="Kill Bill"/>
+        </div>
+        <div class="frame3">
+            <div class="frame4">
+                <h1>KILL BILL: VOL.1</h1>
+                <div class="frame5">
+                    <p>2003</p>
+                    <p>111 min</p>
+                    <p>Action</p>
+                </div>
+                <div class="frame6">
+                    <div class="estrella"></div>
+                    <div class="estrella"></div>
+                    <div class="estrella"></div>
+                    <div class="estrella"></div>
+                    <div class="estrella"></div>
+                    <div class="estrella"></div>
+                    <div class="estrella"></div>
+                    <div class="estrella"></div>
+                </div>
+                <p>The lead character, called 'The Bride,' was a member of the Deadly Viper Assassination Squad, led by her lover 'Bill.' Upon realizing she was pregnant with Bill's child, 'The Bride' decided to escape her life as a killer. She fled to Texas, met a young man, who, on the day of their wedding rehearsal was gunned down by....</p>
+                <p class="amarillo">Read More</p>
+            <div>
+                <button>
+                    <span class="play"></span>
+                    Watch Trailer
+                </button>
+            </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
